@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from app.api.routes.upload_invoice import router as file_router
 from fastapi.middleware.cors import CORSMiddleware
+from app.infrastructure.scheduler import scheduler
 import os
 
 from dotenv import load_dotenv
